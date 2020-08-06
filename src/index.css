@@ -1,13 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Patrick+Hand&display=swap');
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+.navbar{
+  background-color: white;
+}
+.navbar-brand{
+  font-family: 'Alex Brush', cursive;
+}
+.menu_active{
+  border-bottom: 2px solid #b93c59;
+  border-top:  2px solid #b93c59;
+  font-weight: bold;
+}
+.nav-link:hover .up{
+  position: relative;
+  top:2px;
+}
+.nav-link:hover .down{
+  position: relative;
+  top:-1px;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+/* ##HOME PAGE## */
+#header{
+  width: 100%;
+  height: 80vh;
+  margin-top: 70px;
+}
+#header h1{
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  color: black;
+}
+@media (max-width:991px){
+  #header{
+    height: 80vh;
+    text-align: center;
+  }
+  #header .header-img{
+    text-align: center;
+  }
+  #header .header-img img{
+    width: 60%;
+  }
+}
+#header h2{
+  size: 24px;
+  color: black;
+}
+.btn-know-more{
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color:#b93c59;
+  border: 2px solid#b93c59;
+  text-decoration: none;
+}
+.btn-know-more:hover{
+  background-color:#b93c59;
+  color: white;
+}
+
+.header-img{
+  text-align: right;
+}
+
+#header .animated{
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@-webkit-keyframes up-down{
+  0%{
+    transform: translateY(10px);
+  }
+  100%{
+    transform: translateY(-10px);
+  }
+}
+@keyframes up-down{
+  0%{
+    transform: translateY(10px);
+  }
+  100%{
+    transform: translateY(-10px);
+  }
+}
+
+
+.footer {
+  position: fixed;
+  background-color:#b93c59;
+  color: white;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+}
+
+.typical{
+  color: #b93c59;
 }
